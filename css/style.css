@@ -1,0 +1,453 @@
+/* Start Open Sans Google Font  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+/* End Open  Sans Google Font */
+
+/* Start Global CSS */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul li{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.content-right{
+    text-align: right;
+}
+/* End Global CSS */
+
+/* Start Header Area */
+header{
+    padding: 35px 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    /* (if i use my huge class idea then i have to give this position and overflow here) position: relative;
+    overflow: hidden; */
+    color: #000;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0 15px;
+}
+.nav-item{
+    position: relative;
+    overflow: hidden;
+}
+.nav-item::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    bottom: 0;
+    background: #000;
+    height: 3px;
+    transition: 0.5s ease-in-out all;
+}
+.nav-item:hover::after{
+    left: 0%;
+}
+/* (it's also working the change is just the huge class name).navbar-light .navbar-nav .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    bottom: 0;
+    border: 2px solid #000;
+    transition: 0.5s ease-in-out all;
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+    left: 0%;
+} */
+/* (did by my own idea and also it's working).navbar-light .navbar-nav .nav-link:focus,
+ .navbar-light .navbar-nav .nav-link:hover {
+     color: #000;
+    border-bottom: 3px solid #000;
+} */
+.navbar-light .navbar-nav .nav-link:focus,
+ .navbar-light .navbar-nav .nav-link:hover {
+     color: #000;
+}
+/* End Header Area */
+
+/* Start Banner Section */
+.banner-bg{
+    background: url(../img/Afrodyta_template-Symu_co.png) no-repeat top center;
+    background-size: cover;
+    padding: 200px 0;
+}
+.banner h1{
+    text-align: center;
+    color: #fff;
+    font-size: 72px;
+    font-weight: 800;
+    letter-spacing: 8px;
+    text-shadow: 1px 1px 8px #000;
+}
+.banner h1 span{
+    display: block;
+}
+/* End Banner Section */
+
+/* Start Article One Section */
+.article-one{
+    padding: 75px 0 50px;
+}
+.article-one h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    margin-top: 25px;
+}
+.article-one h2 span{
+    display: block;
+}
+.article-one p{
+    font-size: 18px;
+    color: #000;
+    line-height: 30px;
+    padding: 15px 0;
+}
+.article-one a{
+    position: relative;
+    color: #000;
+    width: 121px;
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    overflow: hidden;
+}
+.article-one a::after{
+   content: "";
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   left: -100%;
+   background: #000;
+   height: 3px;
+   transition: .5s ease-in-out all;
+}
+.article-one a:hover::after{
+    left: 0%;
+}
+.article-one h4{
+    font-weight: 700;
+    font-size: 20px;
+}
+/* End Article One Section */
+
+/* Start Article Two Section */
+.article-two{
+    padding: 50px 0;
+}
+.article-two h2{
+    font-size: 35px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.article-two h2 span{
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+}
+.article-two p{
+    font-size: 18px;
+    color: #000;
+    line-height: 30px;
+    padding: 15px 0;
+    margin: 0;
+}
+.article-two a{
+    position: relative;
+    color: #000;
+    width: 121px;
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+.article-two a::after{
+   content: "";
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   left: -100%;
+   background: #000;
+   height: 3px;
+   transition: .5s ease-in-out all;
+}
+.article-two a:hover::after{
+    left: 0%;
+}
+.article-two h4{
+    font-weight: 700;
+    font-size: 20px;
+}
+.article-two h1{
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #000;
+    padding-top: 50px;
+    padding-top: 125px;
+}
+.article-two h1 span{
+    display: block;
+}
+/* End Article Two Section */
+
+/* Start Newsletter Section */
+.newsletter{
+    padding: 50px 0;
+}
+.newsletter-bg{
+    background: url(../img/newsteller.png) no-repeat top center;
+    background-size: cover;
+    padding: 75px 0 50px;
+}
+.newsletter h2{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px #000;
+}
+.btn-sign-up{
+    display: block;
+    margin: 25px auto 0;
+    border: none;
+    padding: 8px 35px;
+    border-radius: 25px;
+    color: #000;
+    background: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .5s ease-in-out;
+}
+.btn-sign-up:hover{
+    background: #000;
+    color: #fff;
+}
+/* End Newsletter Section */
+
+/* Start Information Section */
+.information{
+    padding: 50px 0;
+}
+.information ul{
+    text-align: center;
+}
+.information ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.information p{
+    text-align: center;
+    font-size: 16px;
+    padding: 0 170px;
+    line-height: 30px;
+}
+/* End Information Section */
+
+/* Start Categories Section */
+.categories{
+    padding: 50px 0;
+}
+.mei-bg{
+    background: url(../img/categories.png)  no-repeat top center;
+    background-size: contain;
+    padding: 200px 0;
+}
+.categories h2{
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+    text-shadow: 1px 1px 5px #000;
+    letter-spacing: 5px;
+}
+.cibo-bg{
+    background: url(../img/categories-2.png)  no-repeat top center;
+    background-size: contain;
+    padding: 200px 0;
+}
+.eum-bg{
+    background: url(../img/categories-3.png)  no-repeat top center;
+    background-size: contain;
+    padding: 200px 0;
+}
+/* End Categories Section */
+
+/* Start Article Four Section */
+.article-four{
+    padding: 50px 0;
+}
+.article-four h2{
+    font-size: 35px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.article-four h2 span{
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+}
+.article-four p{
+    font-size: 18px;
+    color: #000;
+    line-height: 28px;
+    padding: 15px 0;
+    margin: 0;
+    line-height: 30px;
+}
+.article-four a{
+    position: relative;
+    color: #000;
+    width: 121px;
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+.article-four a::after{
+   content: "";
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   left: -100%;
+   background: #000;
+   height: 3px;
+   transition: .5s ease-in-out all;
+}
+.article-four a:hover::after{
+    left: 0%;
+}
+/* End Article Four Section */
+
+/* Start Footer Section */
+footer{
+    padding: 50px 0 25px;
+}
+footer ul{
+    text-align: center;
+}
+footer ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 15px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+footer p{
+    text-align: center;
+    font-size: 16px;
+    padding: 0 170px;
+    line-height: 30px;
+}
+footer .social-icon{
+    margin-top: 40px;
+}
+.social-icon ul li{
+    padding: 0px 10px;
+}
+.social-icon ul li .fa{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    transition: .5s ease-in-out all;
+}
+.social-icon ul li .fa:hover{
+  transform: translateY(-10px);
+}
+.social-icon ul li .fa-facebook{
+    background: #205b9f;
+    color: #fff;
+}
+.social-icon ul li .fa-twitter{
+    background: #00ace3;
+    color: #fff;
+}
+.social-icon ul li .fa-youtube{
+    background: #ff4d3f;
+    color: #fff;
+}
+.social-icon ul li .fa-dribbble{
+    background: #ff72a5;
+    color: #fff;
+}
+.social-icon ul li .fa-instagram{
+    background: #2e7fa6;
+    color: #fff;
+}
+/* End Footer Section */
+
+
+/* Start Responsive For Tablet Device */
+@media (min-width: 576px) and (max-width: 768px){
+    .navbar-light .navbar-nav .nav-link {margin: 5px 0px;text-align: center;}
+    .article-one h2 {text-align: center;}
+    .article-one p {padding: 15px 81px;text-align: center;}
+    .article-one a {margin: 0 auto 20px;}
+    .article-two {padding: 90px 0;}
+    .article-two h1 {padding-top: 100px;}
+    .article-two h2 {margin-top: 75px;text-align:center;}
+    .article-two p {padding: 15px 35px;text-align: center;}
+    .article-two a {margin: 0 auto 20px;}
+    .newsletter {padding: 90px 0px;}
+    .information ul li {padding: 0px 10px 20px;}
+    .information p {padding:0 30px;}
+    .cibo-bg {margin: 40px 0;}
+    .article-four {padding: 90px 0;}
+    .article-four h2{margin-top: 75px;text-align:center;}
+    .article-four p {padding: 15px 35px;text-align: center;}
+    .article-four a {margin: 0 auto;}
+    footer ul li {padding: 0px 10px 20px;}
+    footer p {padding:0 30px;}
+}
+/* End Responsive For Tablet Device */
+
+/* Start Responsive For Mobile Device */
+@media (min-width: 320px) and (max-width: 576px){
+    header img{width: 150px;}
+    .navbar-light .navbar-nav .nav-link {margin: 10px 0px;}
+    .banner h1 {font-size: 55px;}
+    .article-one h2 {font-size: 35px;text-align: center;}
+    .article-one p {font-size: 16px;line-height: 26px;text-align: center;margin:0;}
+    .article-one a {font-size: 18px;margin: 0 auto 30px;}
+    .article-one h4 {font-size: 17px;}
+    .article-two h4 {font-size: 17px;}
+    .article-two h1 {font-size: 55px;padding-top: 45px;}
+    .article-two h2 {font-size: 30px;margin-top: 55px;text-align: center;}
+    .article-two h2 span {font-size: 35px;}
+    .article-two p {font-size: 16px;line-height: 26px;padding: 15px 37px;text-align: center;}
+    .article-two a {font-size: 18px;margin: 0 auto 30px;}
+    .information ul li {padding: 0px 5px 3px;font-size: 13px;}
+    .information p {font-size: 13px;padding: 0px 15px;line-height: 27px;}
+    .cibo-bg {margin: 40px 0;}
+    .categories h2 {font-size: 55px;}
+    .article-four h2 {font-size: 30px;text-align: center;margin-top: 45px;}
+    .article-four p {font-size: 16px;line-height: 26px;padding: 15px 37px;text-align: center;}
+    .article-four a {margin: 0 auto;font-size: 18px;}
+    footer {padding: 50px 0 25px;}
+    footer ul{margin:0;}
+    footer ul li {padding: 0px 5px 3px;font-size: 13px}
+    footer p {font-size: 13px;line-height: 26px;padding: 15px 37px;text-align: center;}
+    .social-icon ul li {padding: 0px 5px;}
+}
+/* End Responsive For Mobile Device */
