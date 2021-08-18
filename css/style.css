@@ -445,7 +445,7 @@ footer .social-icon{
     .article-four p {font-size: 16px;line-height: 26px;padding: 15px 37px;text-align: center;}
     .article-four a {margin: 0 auto;font-size: 18px;}
     footer {padding: 50px 0 25px;}
-    footer ul{margin:0;}
+    footer ul{margin:0;padding:0;}
     footer ul li {padding: 0px 5px 3px;font-size: 13px}
     footer p {font-size: 13px;line-height: 26px;padding: 15px 37px;text-align: center;}
     .social-icon ul li {padding: 0px 5px;}
